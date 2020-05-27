@@ -1,0 +1,17 @@
+ TIDAL FACTORS STARTING:  HR- 0.00,  DAY- 30,  MONTH-  1  YEAR- 2018
+
+ FOR A RUN LASTING     7.00 DAYS
+
+
+ CONST   NODE     EQ ARG (ref GM)
+ NAME   FACTOR    (DEG) 
+
+
+ K1    0.92493      32.20
+ O1    0.87766      10.94
+ P1    1.00000     320.81
+ Q1    0.87766       1.29
+ N2    1.02676      29.88
+ M2    1.02676      39.53
+ S2    1.00000       0.00
+ K2    0.81947     245.22

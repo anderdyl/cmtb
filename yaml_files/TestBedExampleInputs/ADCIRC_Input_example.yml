@@ -1,0 +1,32 @@
+# # # # # # # # # # # #
+# Data control        #
+# # # # # # # # # # # #
+THREDDS: FRF  # CHL or FRF                    OPTIONAL: defaults to FRF
+bathyLoc: integrated_bathy      # bathymetry source.  OPTIONAL: defaults to FRF
+model: adcirc
+########################
+#simulations parameters#
+########################
+startTime: '2018-02-01T00:00:00Z'           # project start time
+endTime: '2018-02-07T00:00:00Z'             # project End time
+simulationDuration: 168  # duration in hours            how frequently to get new data, size of individual simulations
+version_prefix: base       # controls switched with int the code
+#gridSIM: 'grids/CMS/CMS-Wave-FRF.sim'  # base grid sim               REQUIRED
+#gridDEP: 'grids/CMS/CMS-Wave-FRF.dep'  # base grid dep               REQUIRED
+modelExecutable: /home/dylananderson/cmtb/bin/      # path to the model            REQUIRED
+numberOfCores: 25
+########################
+# path stuff           #
+########################
+# this is the directory where simulation files and QA/QC plots are made and existing architecture takes over
+workingDirectory: /home/dylananderson/cmtb/data                                  # REQUIRED
+# this is the base directory where netCDF files are output to
+netCDFdir: /home/dylananderson/thredds_data/                    #optional will default to home/[whoami]/thredds_data -- this needs /
+#########################
+# testbed run control   #
+#########################
+# these are flags to control how the simulations are started and run
+pFlag: False                           # turn plotting on
+generateFlag: True                     # generate simulation input files (go get data, process, and write files)
+runFlag: False                          # run the simulation
+analyzeFlag: False                      # post process simulations (read files, post process data, make netCDF files, plot if desired)
